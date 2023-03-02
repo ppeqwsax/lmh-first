@@ -28,14 +28,27 @@
         </style>
         <img class="edd" src="1111.png" alt="五角星"></img>
         <p>By刘明赫</p>
-        <audio autoplay="autoplay" controls="controls"loop="loop" preload="auto"
-                src="music1.mp3">
-            你的浏览器版本太低，不支持audio标签
-        </audio>
         <a href="01背包1维.cpp" download="01背包1维.cpp" class="butter">01背包1维</a>
         <br>
         <a href="01背包2维.cpp" download="01背包2维.cpp" class="butter">01背包2维</a>
         <br>
         <a href="pocket.cpp" download="pocket.cpp" class="butter">pocket</a>
+        <audio autoplay="autoplay" controls="controls"loop="loop" preload="auto"
+                src="music1.mp3" id="vd">
+            你的浏览器版本太低，不支持audio标签
+        </audio>
+        <script type="text/javascript">
+    window.onload = function(){
+             setInterval("toggleSound()",100);
+        }
+
+    function toggleSound() {
+                var music = document.getElementById("vd");//获取ID
+                if (music.paused) { //判读是否播放  
+                    music.paused=false;
+                    music.play(); //没有就播放 
+                }    
+        }
+        </script>
     </body>
 </html>
