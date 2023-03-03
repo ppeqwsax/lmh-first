@@ -6,6 +6,19 @@
             {
                 alert("hi！ 我叫刘明赫 今年13岁了 是一个练习时长2年半的ikun 喜欢c t r l 谢谢！");
             }
+            function f1()
+            {
+                var b = (parseInt(Math.random()*100));
+                do {
+                    var a =parseInt(prompt("请输入一个数",""));
+                    if (a == b){
+                        console.log("恭喜你中奖了");
+                         }
+                     else{
+                            console.log("再试一次");
+                         }
+                    }while(a!=b);
+            }
         </script>
         <h1 class="edd">lmh的五角星</h1>
     </head>
@@ -56,6 +69,8 @@
         <br>
         <a href="pocket.cpp" download="pocket.cpp" class="butter">pocket</a>
         <br>
-        <input type="button" onclick="myFunction()" value="点我点我" weight=300 height=300>
+        <input type="button" onclick="myFunction()" value="点我点我">
+        <br>
+        <input type="button" onclick="f1()" value="玩数字炸弹">
     </body>
 </html>
