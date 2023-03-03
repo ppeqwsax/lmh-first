@@ -12,11 +12,14 @@
                 do {
                     var a =parseInt(prompt("请输入一个数",""));
                     if (a == b){
-                        console.log("恭喜你中奖了");
+                        alert("恭喜你中奖了");
+                         }
+                     if(a>b){
+                            alert("大了");
                          }
                      else{
-                            console.log("再试一次");
-                         }
+                         alert("小了");
+                     }
                     }while(a!=b);
             }
         </script>
