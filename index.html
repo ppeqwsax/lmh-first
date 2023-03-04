@@ -8,19 +8,23 @@
             }
             function f1()
             {
-                var b = (parseInt(Math.random()*100));
+                var b = (parseInt(Math.random()*100)),c=0;
                 do {
                     var a =parseInt(prompt("请输入一个数0-100",""));
                     if (a == b){
                         alert("恭喜你中奖了");
+                        c++;
                          }
                      if(a>b){
                             alert("大了");
+                         c++;
                          }
                      else{
                          alert("小了");
+                         c++;
                      }
                     }while(a!=b);
+                alert(c-1);
             }
         </script>
         <h1 class="edd">lmh的五角星</h1>
