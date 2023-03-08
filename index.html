@@ -11,6 +11,10 @@
                 var b = (parseInt(Math.random()*100)),c=0;
                 do {
                     var a =parseInt(prompt("请输入一个数0-100",""));
+                    if(a=="")
+                    {
+                        alert("就这态度？");
+                    }
                     if (a == b){
                         alert("恭喜你中奖了");
                         c++;
