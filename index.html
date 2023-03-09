@@ -8,13 +8,19 @@
             }
             function f1()
             {
-                var b = (parseInt(Math.random()*100)),c=0;
+                var b = (parseInt(Math.random()*100)),c=0,d=0;
                 do {
                     var a =prompt("请输入一个数0-100","");
                     var inInt=parseInt(a);
+                    if(d==10)
+                    {
+                        alert("滚");
+                        break;
+                    }
                     if(a=="")
                     {
                         alert("就这态度？");
+                        d++;
                         continue;
                     }
                     if (inInt == b){
@@ -23,7 +29,7 @@
                         break;
                          }
                      if(inInt>b){
-                            alert("大了");
+                         alert("大了");
                          c++;
                          continue;
                          }
@@ -32,7 +38,7 @@
                          c++;
                      }
                     }while(inInt!=b);
-                alert(c);
+                if(d!=10) alert(c);
             }
         </script>
         <h1 class="edd">lmh的五角星</h1>
